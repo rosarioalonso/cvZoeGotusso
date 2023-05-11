@@ -16,33 +16,27 @@ body {margin: 0;}
 a {text-decoration: none; color: black;}
 p, li {font-size: 18px;}
 
-.header{ position: relative;}
-
-.fondoHeader{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    height: 50vh;
+header{
+    background-color: #AC5C39;
+    height: 40vh;
 }
 
 .navBar{
-    top: 15px;
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+    max-width: 1200px;
     color: #F8E1C2;
-    background-color: #AC5C39;
     border-radius: 7px;
     text-align: center;
     padding: 1%;
-    position: absolute;
-    z-index: 100;
 }
 
 .bar{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -67,16 +61,23 @@ p, li {font-size: 18px;}
     --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
 }
 
+.cajapresentacion{
+    display: block;
+    margin: auto 0;
+}
+
 .presentacion{
     width: 50%;
+    max-width: 920px;
     background-color: #F8E1C2;
     display: flex;
     padding: 2%;
     justify-content: space-between;
-    position: absolute;
-    top: 200px;
     border-radius: 30px;
-    left: 23%;
+    position: relative;
+    margin-top: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .fotoPresentacion{
@@ -139,8 +140,9 @@ p, li {font-size: 18px;}
 
 
 #musica{
-    margin-top: 100vh;
+    margin-top: 40vh;
     width: 70%;
+    max-width: 1250px;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -474,8 +476,8 @@ p, li {font-size: 18px;}
     }
     .presentacion {
         width: 70%;
-        left: 10%;
         display: block;
+        top: 70px;
         margin: 0 auto;
         padding: 30px;
     }
@@ -495,7 +497,7 @@ p, li {font-size: 18px;}
     }
 
     .tituloMusica h2{
-        margin-top: 260%;
+        margin-top: 5%;
     }
 
     .musicaFlex{
@@ -578,12 +580,11 @@ p, li {font-size: 18px;}
 
     .presentacion {
         width: 80%;
-        left: 10%;
-        top: 240px;
+        top: 200px;
     }
 
-    .tituloMusica h2{
-        margin-top: 30%;
+    #musica{
+        margin-top: 35vh;
     }
 
     .musicaFlex{
@@ -601,6 +602,11 @@ p, li {font-size: 18px;}
     .todoSalvapantallas, .solista{
         display: block;
     }
+
+    .fotoSalvapantallas, .fotoSolista {
+        width: 100%;
+    }
+
 
     .infoSalvapantallas, .infoSolista{
         width: 50%;
