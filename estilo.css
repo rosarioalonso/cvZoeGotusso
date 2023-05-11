@@ -21,6 +21,8 @@ header{
     height: 40vh;
 }
 
+
+
 .navBar{
     margin-left: 10%;
     margin-right: 10%;
@@ -59,6 +61,10 @@ header{
 
 .bar a:hover{
     --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+}
+
+#cajaPresentacion{
+    transform: translateY(-200px);
 }
 
 .cajapresentacion{
@@ -140,7 +146,7 @@ header{
 
 
 #musica{
-    margin-top: 40vh;
+    margin-top: -150px;
     width: 70%;
     max-width: 1250px;
     margin-left: 15%;
@@ -175,7 +181,7 @@ header{
 
 
 #carreraMusical{
-    margin-top: 100px;
+    margin-top: 10%;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -474,6 +480,11 @@ header{
     .navBar{
         display: none;
     }
+
+    #cajaPresentacion{
+        transform: translateY(-280px);
+    }
+
     .presentacion {
         width: 70%;
         display: block;
@@ -578,13 +589,12 @@ header{
         display: none;
     }
 
-    .presentacion {
-        width: 80%;
-        top: 200px;
+    #cajaPresentacion{
+        transform: translateY(-280px);
     }
 
-    #musica{
-        margin-top: 35vh;
+    .presentacion {
+        width: 80%;
     }
 
     .musicaFlex{
