@@ -120,6 +120,8 @@ p, li {font-size: 18px;}
     color: #AC5C39;
 }
 
+.mail:hover{text-decoration: underline;}
+
 
 .redes {
     width: 70%;
