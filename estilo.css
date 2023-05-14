@@ -1,5 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@500&family=Spectral:wght@300&display=swap');
 
+@keyframes derAnim {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(1500px);
+    }
+}
+
+@keyframes izqAnim {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-1200px);
+    }
+    100%{
+        transform: translateX(-1200px);
+    }
+}
+
+@keyframes scaleAnim {
+    0%{
+        color: #AC5C39;
+        transform: scale(-0);
+    }
+    50%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes rotacionAnim {
+    0%{
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    50%{
+        transform: rotate3d(0, 0, 0, 360deg);
+    }
+    100%{
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+
 :root{
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
@@ -47,6 +97,9 @@ header{
     color: #F8E1C2;
     font-size: 20px;
     width: 20%;
+    animation-name: scaleAnim;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .bar a::after {
@@ -64,13 +117,10 @@ header{
 }
 
 #cajaPresentacion{
-    transform: translateY(-200px);
+    transform: translateY(-150px);
+    overflow: hidden;
 }
 
-.cajapresentacion{
-    display: block;
-    margin: auto 0;
-}
 
 .presentacion{
     width: 50%;
@@ -80,10 +130,11 @@ header{
     padding: 2%;
     justify-content: space-between;
     border-radius: 30px;
-    position: relative;
-    margin-top: 200px;
     margin: 0 auto;
-    margin-top: 100px;
+    animation-name: derAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .fotoPresentacion{
@@ -135,6 +186,10 @@ header{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    animation-name: scaleAnim;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-delay: 1s;
 }
 .redes img{
     width: 30px;
@@ -172,6 +227,12 @@ header{
     margin: auto;
 }
 
+.sitios{
+    animation-name: scaleAnim;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
 .sitios img{
     margin-right: 20px;
     transition: all 0.5s ease;
@@ -185,6 +246,7 @@ header{
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    overflow: hidden;
 }
 
 .tituloCarreraMusical{
@@ -210,6 +272,10 @@ header{
 .infoSalvapantallas{
     width: 20%;
     text-align: center;
+    animation-name: izqAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .tituloSalvapantallas{
@@ -234,6 +300,10 @@ header{
 
 .cuadroSalvapantallas{
     width: 75%;
+    animation-name: derAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .cuadroSalvapantallasInfo{
@@ -245,7 +315,6 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
     align-items: center;
     border-radius: 30px;
     width: 85%;
@@ -253,8 +322,9 @@ header{
 
 .cuadroSalvapantallasInfo div {width: 25%;}
 
-.cuadroSalvapantallas h3{color: #AC5C39; margin-top: 0;}
-.duracion, .giras {margin-top: 7%;}
+.cuadroSalvapantallas h3{
+    color: #AC5C39;
+    margin-top: 0;}
 
 .solista{
     width: 100%;
@@ -270,6 +340,10 @@ header{
 .infoSolista{
     width: 20%;
     text-align: center;
+    animation-name: izqAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .tituloSolista{
@@ -293,6 +367,10 @@ header{
 
 .cuadroSolista{
     width: 75%;
+    animation-name: derAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .cuadroSolistaInfo {
@@ -304,7 +382,6 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
     align-items: stretch;
     border-radius: 30px;
 }
@@ -338,6 +415,10 @@ header{
     text-align: center;
     padding: 3%;
     border-radius: 30px;
+    animation-name: rotacionAnim, scaleAnim;
+    animation-duration: 2s;
+    animation-delay: 1s, 0s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .sms, .infogrammy, .triste{
@@ -366,6 +447,7 @@ header{
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 8%;
+    overflow: hidden;
 }
 
 
@@ -387,6 +469,10 @@ header{
     align-items: center;
     margin: auto;
     padding: 3%;
+    animation-name: derAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .fotoTelonera{
@@ -425,6 +511,10 @@ header{
     margin: auto;
     padding: 3%;
     margin-top: 4%;
+    animation-name: izqAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .fotoMarcas, .infoMarcas{
@@ -482,7 +572,7 @@ header{
     }
 
     #cajaPresentacion{
-        transform: translateY(-280px);
+        transform: translateY(-250px);
     }
 
     .presentacion {
@@ -590,7 +680,7 @@ header{
     }
 
     #cajaPresentacion{
-        transform: translateY(-280px);
+        transform: translateY(-200px);
     }
 
     .presentacion {
