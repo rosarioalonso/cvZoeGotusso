@@ -242,7 +242,7 @@ header{
 
 
 #carreraMusical{
-    margin-top: 10%;
+    margin-top: 3%;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -323,7 +323,8 @@ header{
 
 .cuadroSalvapantallas h3{
     color: #AC5C39;
-    margin-top: 0;}
+    margin-top: 0;
+}
 
 .solista{
     width: 100%;
@@ -566,6 +567,13 @@ header{
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
     .navBar{
         display: none;
     }
@@ -638,6 +646,10 @@ header{
 
     .cuadroSalvapantallasInfo p, .cuadroSolistaInfo p{
         margin-top: -15px;
+    }
+
+    .cuadroSalvapantallasInfo h3, .cuadroSolistaInfo h3{
+        font-size: 16px;
     }
 
     .eventos{
