@@ -656,8 +656,16 @@ header{
         margin-top: -15px;
     }
 
-    .cuadroSalvapantallasInfo h3, .cuadroSolistaInfo h3{
+    .cuadroSolistaInfo p, .cuadroSolistaInfo li{
+    font-size: 16px;
+}
+
+    h3{
         font-size: 16px;
+    }
+
+    p,  li{
+        font-size: 14px;
     }
 
     .eventos{
@@ -726,7 +734,6 @@ header{
         width: 100%;
     }
 
-
     .infoSalvapantallas, .infoSolista{
         width: 50%;
         margin: auto;
@@ -740,6 +747,14 @@ header{
 
     .cuadroSalvapantallasInfo p, ul, .cuadroSolistaInfo p, ul{
         margin-top: -15px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    p,  li{
+        font-size: 14px;
     }
 
     .eventos{
