@@ -612,6 +612,10 @@ header{
         margin-top:30px;
     }
 
+    #musica{
+        margin-top: -120px;
+    }
+
     .tituloMusica h2{
         margin-top: 5%;
     }
@@ -622,6 +626,10 @@ header{
 
     .instrumentos, .estilos, .encontrala{
         margin-top: 50px;
+    }
+
+    .sitios img{
+        width: 30px;
     }
 
     .todoSalvapantallas, .solista{
@@ -713,6 +721,7 @@ header{
     .presentacion {
         width: 80%;
     }
+
 
     .musicaFlex{
         display: block;
