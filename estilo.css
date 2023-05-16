@@ -319,6 +319,10 @@ header{
     border-radius: 30px;
 }
 
+.cuadroSalvapantallasInfo p, .cuadroSalvapantallasInfo li{
+    font-size: 16px;
+}
+
 .cuadroSalvapantallasInfo div {width: 25%;}
 
 .cuadroSalvapantallas h3{
@@ -384,6 +388,10 @@ header{
     flex-direction: column;
     align-content: center;
     border-radius: 30px;
+}
+
+.cuadroSolistaInfo p, .cuadroSolistaInfo li{
+    font-size: 16px;
 }
 
 .cuadroSolistaInfo div {width: 30%;}
